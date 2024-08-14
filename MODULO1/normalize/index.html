@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <title>Práctica normalize</title>
+    <style>
+        /* Estilos intencionales */
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Demostración de inconsistencias entre navegadores</h1>
+        <div class="demo-box">
+            <h2>1.Márgenes de elementos</h2>
+            <p>los margenes predeterminados pueden variar:</p>
+            <ul>
+                <li>Elemento de lista 1</li>
+                <li>Elemento de lista 2</li>
+            </ul>
+        </div>
+        <div class="demo-box">
+            <h2>2. Tamaños de fuentes de encabezado</h2>
+            <h1>Encabezado h1</h1>
+            <h2>Encabezado h2</h2>
+            <h3>Encabezado h3</h3>
+        </div>
+        <div class="demo-box">
+            <h2>3. Estilos de enlaces</h2>
+            <a href="#">Este es un enlace normal</a><br>
+            <a href="#" style="color: red;">Este es un enlace visitado (simulado)</a>
+        </div>
+    </div>
+</body>
+</html>

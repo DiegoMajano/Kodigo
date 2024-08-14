@@ -1,0 +1,126 @@
+/* estilos generales */
+
+html{
+    box-sizing: border-box;
+
+}
+
+*, *::before, *::after{
+    box-sizing: inherit;
+}
+
+body{
+    font-family: Montserrat;
+    margin: 0;
+    padding: 0;
+}
+
+/* estilos principales */
+
+.main{
+    position: relative;
+    min-height: 100vh;
+    background: linear-gradient(#f0483a 30%, #d10a20);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 100px;
+}
+
+.main header{
+    width: 100%;
+    padding: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+
+.main header .logo{
+    max-width: 90px;
+}
+
+.main header .nav{
+    display: flex;
+    list-style: none;
+    padding-left: 0;
+}
+
+.main header .nav li a{
+    position: relative;
+    color: #ffff;
+    text-decoration: none;
+    margin-left: 40px;
+}
+
+.main .content{
+    margin-top: 90px;
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main .content .text{
+    width: 100%;
+    max-width: 600px;
+}
+
+.main .content .text h2{
+    color: #ffff;
+    font-size: 5em;
+    font-weight: 500;
+    line-height: 1.1;
+    margin: 20px 0;
+}
+
+.main .content .text h2 span{
+    font-weight: 800;
+}
+
+.main .content .text p{
+    color: #ffff;
+    font-size: 1.1em;
+    font-weight: 500;
+    line-height: 1.5;
+    margin: 20px 0;
+}
+
+.main .content .text .btn{
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    padding: 20px 50px;
+    background: #ffff;
+    color: #333;
+    font-size: 1.1em;
+    font-weight: 600;
+    border-radius: 40px;
+
+    transition: 0.25s;
+
+    &:hover{
+        letter-spacing: 2px;
+    }
+}
+
+.main .content-img{
+    position: relative;
+}
+
+.main .content-img .imgMuestra{
+    display: block;
+}
+
+.main .content-img .imgMuestra img{
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+}
+
+
