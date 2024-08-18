@@ -98,12 +98,12 @@ async function ingresarDatos() {
         if(promedioMañana === promedioTarde && promedioMañana === promedioNoche) resultado = ["Promedios iguales", promedioMañana];
     
         // verificar si hay 2 iguales
-        if(promedioMañana === promedioTarde && promedioMañana > promedioNoche) resultado = ["Turno mañana y tarde", promedioMañana];
+        else if(promedioMañana === promedioTarde && promedioMañana > promedioNoche) resultado = ["Turno mañana y tarde", promedioMañana];
         else if(promedioMañana === promedioNoche && promedioMañana > promedioTarde) resultado = ["Turno mañana y noche", promedioMañana];
         else if(promedioTarde === promedioNoche && promedioTarde > promedioMañana) resultado = ["Turno tarde y noche", promedioTarde];
         
         // verificar cual es mayor
-        if(promedioMañana > promedioTarde && promedioMañana > promedioNoche) resultado = ["Turno mañana", promedioMañana];
+        else if(promedioMañana > promedioTarde && promedioMañana > promedioNoche) resultado = ["Turno mañana", promedioMañana];
         else if(promedioTarde > promedioNoche && promedioTarde > promedioMañana) resultado = ["Turno tarde", promedioTarde];
         else if(promedioNoche > promedioMañana && promedioNoche > promedioTarde) resultado = ["Turno noche", promedioNoche];
     
